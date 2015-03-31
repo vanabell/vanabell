@@ -9,49 +9,53 @@
   <link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl();?>/css/style.css" />
   <!-- modernizr enables HTML5 elements and feature detects -->
   <script type="text/javascript" src="<?php echo $this->baseUrl();?>/js/modernizr-1.5.min.js"></script>
+
 </head>
 
 <body>
-  <div id="main">		
+  <div id="main">   
 
     <header>
-	  <nav>
-		<div id="menubar">
-          <ul id="nav">
-            <li class="current"><a href="<?php echo $this->baseUrl();?>">Home</a></li>
-            <li><a href="ourwork.html">Our Work</a></li>
-            <li><a href="testimonials.html">Testimonials</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-		</div><!--close menubar-->	
-      </nav>
-	  <div id="strapline">
-	    <div id="welcome_slogan">
-	      <h3>Paguyuban Warga Alam Citra</h3>
-	    </div><!--close welcome_slogan-->
-      </div><!--close strapline-->    
-	</header>
+    <div id="strapline">
+     <div id="welcome_slogan">
+       <img width="50px" height="50px" src="<?php echo $this->baseUrl();?>/images/logo.png" alt="Perumahan Alam Citra" />
+       <h3>Paguyuban Warga Alam Citra</h3>
+       <img width="50px" height="50px" src="<?php echo $this->baseUrl();?>/images/logo.png" alt="Perumahan Alam Citra" />
+     </div><!--close welcome_slogan-->
+   </div><!--close strapline-->   
+   <nav>
+      <div id="menubar">
+        <ul id="nav">
+          <li class="current"><a href="<?php echo $this->baseUrl();?>">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Ad/Art</a></li>
+          <li><a href="#">Struktur</a></li>
+          <li><a href="#">Galeri</a></li>
+          <li><a href="<?php echo $this->baseUrl();?>/index/contactus">Contact Us</a></li>
+        </ul>
+      </div><!--close menubar-->  
+    </nav> 
+ </header>
   
-  <!-- <div class="slideshow">
+  <div class="slideshow">
    <ul class="slideshow">
-    <li class="show"><img width="1100" height="300" src="<?php echo $this->baseUrl();?>/images/alamcitra.jpg" alt="Perumahan Alam Citra" /></li>
-    <li><img width="1100" height="300" src="<?php echo $this->baseUrl();?>/images/alamcitra1.jpg" alt="Tampak Depan Perumahan Alam Citra" /></li>
+    <li class="show"><img width="1000" height="300" src="<?php echo $this->baseUrl();?>/images/alamcitra.jpg" alt="Perumahan Alam Citra" /></li>
+    <li><img width="1000" height="300" src="<?php echo $this->baseUrl();?>/images/alamcitra1.jpg" alt="Tampak Depan Perumahan Alam Citra" /></li>
    </ul> 
-  </div> -->
+  </div>
 
-	<div id="site_content">		
-	  
+  <div id="site_content">   
+    
    <div class="sidebar_container">       
     <div class="sidebar">
       <div class="sidebar_item">
         <h2>News Update</h2>
-        <a href="#">Jadwal Ronda Mingguan</a>
-        <a href="#">Jadwal Arisan Mingguan</a>
-        <a href="#">Jadwal Kerja Bakti Mingguan</a>
-        <a href="#">Jadwal Kumpul Mingguan</a>
+        <a href="#">Welcoming Address</a>
+        <a href="#">Agenda</a>
+        <a href="#">Program Kerja</a>
+        <a href="#">Laporan Keungan</a>
       </div><!--close sidebar_item--> 
-    </div><!--close sidebar-->     		
+    </div><!--close sidebar-->        
     <div class="sidebar">
       <div class="sidebar_item">
         <h2>Iklan</h2>
@@ -60,25 +64,25 @@
         <a href="#">Jual Rumah Tipe 43 [Sold Out]</a>      
         <a href="#">Rumah dikontrakan Tipe 50</a>         
       </div><!--close sidebar_item--> 
-    </div><!--close sidebar-->		
+    </div><!--close sidebar-->    
 
-  </div><!--close sidebar_container-->	
+  </div><!--close sidebar_container-->  
 
   
-	   
-	  <div id="content">
+     
+    <div id="content">
         <div class="content_item">
-		  <?php  echo $this->layout()->content;?>
-		</div><!--close content_item-->
+      <?php  echo $this->layout()->content;?>
+    </div><!--close content_item-->
       </div><!--close content-->   
-	</div><!--close site_content-->  	
+  </div><!--close site_content-->   
 
     <footer>
-	  <!-- <a href="index.html">Home</a> | <a href="ourwork.html">Our Work</a> | <a href="testimonials.html">Testimonials</a> | <a href="projects.html">Projects</a> | <a href="contact.html">Contact</a><br/><br/>
-	  <a href="http://fotogrph.com">Images</a> | Heart Internet <a href="http://www.heartinternet.co.uk/web-hosting/">web hosting</a> | website template by <a href="http://www.freehtml5templates.co.uk">Free HTML5 Templates</a> -->
+    <!-- <a href="index.html">Home</a> | <a href="ourwork.html">Our Work</a> | <a href="testimonials.html">Testimonials</a> | <a href="projects.html">Projects</a> | <a href="contact.html">Contact</a><br/><br/>
+    <a href="http://fotogrph.com">Images</a> | Heart Internet <a href="http://www.heartinternet.co.uk/web-hosting/">web hosting</a> | website template by <a href="http://www.freehtml5templates.co.uk">Free HTML5 Templates</a> -->
     <p>&copy; Alam Citra 2015</p>
     </footer>
-	
+  
   </div><!--close main-->
   
   <!-- javascript at the bottom for fast page loading -->
