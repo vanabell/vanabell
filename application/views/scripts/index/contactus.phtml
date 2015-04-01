@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html>
+  <style type="text/css">
+    #konten-kontak{
+      width: 100%;
+      display: inline-block;
+    }
+    #konten-kontak #kontak-kiri{
+      width: 100%;
+      float: left;
+    }
+    #konten-kontak #kontak-kiri #alamat{
+      display: inline-block;
+      float: left;
+      width: 70%;
+      padding-left: 1%;
+    }
+    #konten-kontak #kontak-kanan{
+      width: 100%;
+      float: left;
+      padding: 15px;
+    }
+
+  </style>
+  <h1>Contact Us</h1>
+  <div id="konten-kontak">
+    <div id="kontak-kiri">
+      <img src="<?php echo $this->baseUrl();?>/images/logo2.jpg" width="200px" height="200px" style="float:left;">
+      <div id="alamat">
+        <h2 style="font-size: 21px;font-weight:600;">PAGUYUBAN WARGA ALAM CITRA</h2>
+        <p style="font-size: 17px;">Perumahan Alam Citra RT 07 dan 08
+          <br/>Dk. Cabeyan, Kel. Panggungharjo, Kec. Sewon<br/> Kab. Bantul, DIY 55188
+        </p>
+      </div>
+    </div>
+    <div id="kontak-kanan">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7904.943301066807!2d110.3599713!3d-7.8456036!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1427787820166" width="650" height="300" frameborder="0" style="border:0"></iframe> 
+    </div>
+  </div> 
+  
+</html>
