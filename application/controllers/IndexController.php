@@ -29,7 +29,11 @@ class IndexController extends Zend_Controller_Action
         //$this->_helper->layout->setLayout('layout2');
         // action body
     }
-    
+    public function galeryAction()
+    {
+        //$this->_helper->layout->setLayout('layout2');
+        // action body
+    }
     
 
 }

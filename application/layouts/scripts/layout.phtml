@@ -7,6 +7,7 @@
   <meta name="keywords" content="website keywords, website keywords" />
   <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
   <link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl();?>/css/style.css" />
+  <script type="text/javascript" src="<?php echo $this->baseUrl();?>/js/jquery.min.js"></script>
   <!-- modernizr enables HTML5 elements and feature detects -->
   <script type="text/javascript" src="<?php echo $this->baseUrl();?>/js/modernizr-1.5.min.js"></script>
 
@@ -20,7 +21,7 @@
      <div id="welcome_slogan">
        <img width="50px" height="50px" src="<?php echo $this->baseUrl();?>/images/logo.png" alt="Perumahan Alam Citra" />
        <h3>Paguyuban Warga Alam Citra</h3>
-       <img width="50px" height="50px" src="<?php echo $this->baseUrl();?>/images/logo.png" alt="Perumahan Alam Citra" />
+       <!-- <img width="50px" height="50px" src="<?php echo $this->baseUrl();?>/images/logo.png" alt="Perumahan Alam Citra" /> -->
      </div><!--close welcome_slogan-->
    </div><!--close strapline-->   
    <nav>
@@ -30,7 +31,7 @@
           <li><a href="#">About Us</a></li>
           <li><a href="#">Ad/Art</a></li>
           <li><a href="#">Struktur</a></li>
-          <li><a href="#">Galeri</a></li>
+          <li><a href="<?php echo $this->baseUrl();?>/index/galery">Galeri</a></li>
           <li><a href="<?php echo $this->baseUrl();?>/index/contactus">Contact Us</a></li>
         </ul>
       </div><!--close menubar-->  
@@ -87,7 +88,6 @@
   </div><!--close main-->
   
   <!-- javascript at the bottom for fast page loading -->
-  <script type="text/javascript" src="<?php echo $this->baseUrl();?>/js/jquery.min.js"></script>
   <script type="text/javascript" src="<?php echo $this->baseUrl();?>/js/image_slide.js"></script>
   
 </body>
