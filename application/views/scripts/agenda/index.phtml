@@ -1,6 +1,9 @@
 <!DOCTYPE html> 
 <html>
 <style type="text/css">
+#agenda{
+  display: inline-block;
+}
 	#link-read{
 		text-decoration: none;
 		font-style: italic;
@@ -8,20 +11,40 @@
 	#link-read:hover{
 		color: blue;
 	}
+  h1{
+    margin: 0px;
+  }
+  a{
+    text-decoration: none;
+  }
+  #agenda p{
+    color: red;
+    margin: 0px;
+    width: 200px;
+    float: left;
+    line-height: 1.4em;
+    padding-left: 5px;
+  }
+  span{
+    color: black;
+    float: left;
+  }
 </style>
   <h3><b>AGENDA WARGA ALAM CITRA</b></h3>
   </br>
-  <table>
   		<?php for($a=0;$a<count($this->data);$a++){
   			$b=$a+1;
   		?>
+      <div id="agenda">
+        <h1><a href="<?php echo $this->baseUrl();?>/agenda/detail/p/<?php echo $this->data[$a]['agenda_id']?>"><?php echo $this->data[$a]['agenda_name']?></a></h1>
+        <span>diadakan tanggal </span><p><?php echo $this->data[$a]['agenda_date']?></p>
+      </div>
   		
-  		<tr>
+  		<!-- <tr>
   			<td><?php echo $this->data[$a]['agenda_name']?></td>
   			<td><?php echo $this->data[$a]['agenda_date']?></td>
   			<td><a href="<?php echo $this->baseUrl();?>/agenda/detail/p/<?php echo $this->data[$a]['agenda_id']?>">detail</a></td>
-  		</tr>
+  		</tr> -->
   		
   		<?php }?>
-  </table>
 </html>
