@@ -15,25 +15,32 @@ class IndexController extends Zend_Controller_Action
     	//$this->_helper->layout->disableLayout();
     }
 
-    public function ourAction()
+    public function aboutAction()
     {
     	// action body
+    	$model = new Application_Model_AboutModel();
+    	$getall = $model->getAllAbout();
+    	$this->view->data = $getall;
     }
+    
     public function newsAction()
     {
         //$this->_helper->layout->setLayout('layout2');
         // action body
     }
+    
+    public function galeryAction()
+    {
+    	//$this->_helper->layout->setLayout('layout2');
+    	// action body
+    }
+    
     public function contactusAction()
     {
         //$this->_helper->layout->setLayout('layout2');
         // action body
     }
-    public function galeryAction()
-    {
-        //$this->_helper->layout->setLayout('layout2');
-        // action body
-    }
+    
     
 
 }
