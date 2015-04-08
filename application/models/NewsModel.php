@@ -1,11 +1,11 @@
 <?php
-class Admin_Model_NewsModel {
+class Application_Model_NewsModel {
 	protected $_dbTableProduct;
 	protected $_db;
 
 	public function __construct()
 	{
-		$this->_dbTableProduct = new Admin_Model_DbTables_NewsModel();
+		$this->_dbTableProduct = new Application_Model_DbTables_NewsModel();
 		$this->_db = Zend_Registry::get('db_doc');
 	}
 

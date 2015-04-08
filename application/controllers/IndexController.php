@@ -12,7 +12,10 @@ class IndexController extends Zend_Controller_Action
     public function indexAction()
     {
         // action body
-    	//$this->_helper->layout->disableLayout();
+        //$this->_helper->layout->disableLayout();
+            $model = new Application_Model_NewsModel();
+            $data = $model->getAllNews();
+            $this->view->data = $data;
     }
 
     public function aboutAction()
@@ -27,6 +30,11 @@ class IndexController extends Zend_Controller_Action
     {
         //$this->_helper->layout->setLayout('layout2');
         // action body
+        $model = new Application_Model_NewsModel();
+        $req = $this->getRequest();
+        $id = $req->getParam('p');
+        $getnews = $model->getAllNewsDet($id);
+        $this->view->data = $getnews;
     }
     
     public function galeryAction()
