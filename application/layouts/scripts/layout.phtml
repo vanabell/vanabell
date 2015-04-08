@@ -79,12 +79,70 @@
       </div><!--close content-->   
   </div><!--close site_content-->   
 
+     <script type="text/javascript">
+       $(document).ready(function(){
+        $("ul#nav li a").live('click', function(){
+          //$(this).parent().siblings().find('.current').removeClass('current');
+          //$(this).parent('li').addClass('current');
+          $(this).parent().removeClass("current");
+        });
+        $("div.gue").hide();
+        $("#tampilgue").live('click', function(){
+          $('div.gue').fadeIn('slow');
+        });
+        $('a.close').click(function(eve){
+          eve.preventDefault();
+         $(this).parents('div.gue').fadeOut('slow');
+        });
+      });
+    </script>
+    <style type="text/css">
+      div.gue {
+          position: fixed;
+          top: 0px;
+          bottom: 0px;
+          left: 0px;
+          right: 0px;
+          width: 100%;
+          height: 100%;
+          background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.8);
+          z-index: 9999;
+
+      }
+      div#boxgue {
+          margin: 5% auto;
+          background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.9);
+          width: 50%;
+          height: 60%;
+          box-shadow: 0px 0px 15px #000;
+          z-index: 9999;
+          border-radius: 15px;
+      }
+      a.close {
+          text-decoration: none;
+          color: #000;
+          margin: 10px 15px 0px 0px;
+          float: right;
+          font-family: tahoma;
+          font-size: 20px;
+      }
+      p#tampilgue{
+        cursor: pointer;
+      }
+    </style>
     <footer>
     <!-- <a href="index.html">Home</a> | <a href="ourwork.html">Our Work</a> | <a href="testimonials.html">Testimonials</a> | <a href="projects.html">Projects</a> | <a href="contact.html">Contact</a><br/><br/>
     <a href="http://fotogrph.com">Images</a> | Heart Internet <a href="http://www.heartinternet.co.uk/web-hosting/">web hosting</a> | website template by <a href="http://www.freehtml5templates.co.uk">Free HTML5 Templates</a> -->
-    <p>&copy; Alam Citra 2015</p>
+    <p id="tampilgue">&copy; Alam Citra 2015</p>
     </footer>
-  
+  <div class="gue" style="display:none;">
+      <div id="boxgue">
+        <a class="close" href="#">X</a>
+        <img src="<?php echo $this->baseUrl();?>/images/hey.png" width="400px" height="250px" style="margin:0px 20%;"/>
+        <p align="center" style="font-weight:600;font-size:19px;padding:0px;">Contact Person : yafiemiftah@gmail.com</p>
+        <p align="center" style="font-weight:600;font-size:19px;padding:0px;">hendyivan@gmail.com</p>
+        <p align="center" style="font-weight:600;font-size:19px;padding:0px;">No Telp : 085647337473 dan 085725155543</p>
+      </div>
   </div><!--close main-->
   
   <!-- javascript at the bottom for fast page loading -->

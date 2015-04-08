@@ -1,5 +1,5 @@
 <?php
-class Admin_Model_DbTables_NewsModel extends Zend_Db_Table_Abstract {
+class Application_Model_DbTables_NewsModel extends Zend_Db_Table_Abstract {
 
 	public function getAllNews() {
 		try {
