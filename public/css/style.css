@@ -86,7 +86,8 @@ ol li
 
 #main
 { padding-bottom: 0px;
-  background: #E7E7E7;}
+  background: url("../images/bg.jpg") repeat-x fixed center top #003060;
+}
   
 header
 { height: 115px;
@@ -102,7 +103,7 @@ nav
   width: 940px;
   height: 45px;
   margin: 5px auto;
-  background: #000;
+  background: #004487;
   -moz-border-radius: 0px 0px 15px 15px;
   -webkit-border: 0px 0px 15px 15px;
   -webkit-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
@@ -129,7 +130,7 @@ nav
 { font: 35px 'Arial';
   letter-spacing: -1px;
   text-shadow: 0px -1px 0px #000;
-  color: #FFF;
+  color: #D59C01;
   float: left;
   margin-top: 17px;
 } 
@@ -257,7 +258,7 @@ footer {
     font-weight: bold;
     text-align: center;
     text-shadow: 1px 1px #FFF;
-    background: url("../images/header.jpg") repeat scroll 0% 0% #1D1D1D;
+    background: url("../images/footer.jpg") repeat scroll 0% 0% #1D1D1D;
     padding-bottom: 0px;
     padding-top: 1px;
     opacity: 0.9;
